@@ -2,7 +2,7 @@
 
 
 let config = {
-  container: '#tech-tree',
+  container: '#charm-tree',
   rootOrientation: 'WEST', // NORTH || EAST || WEST || SOUTH
   nodeAlign: 'TOP',
   // levelSeparation: 30,
@@ -55,10 +55,10 @@ let config = {
 let rootNode = {HTMLid: 'root', data: {tier: 0}};
 
 $(document).ready(function() {
-  $.getJSON('techs.json', function(techData) {
-    let techs = techData.filter(function(tech) {
-      return Object.keys(tech)[0].search(/^@\w+$/) == -1;
-    }).map(function(tech) {
+  $.getJSON('https://github.com/drsaeva/ex3charmtree/blob/master/solar_charms.jsonn', function(data) {
+    let charms = data.filter(function(charms) {
+      return Object.keys()[0].search(/^@\w+$/) == -1;
+    }).map(function(tree) {
       let key = tech.key;
       let tier = tech.is_start_tech
           ? ' (Starting)'
@@ -75,49 +75,7 @@ $(document).ready(function() {
       let iconClass = 'icon'
           + (tech.is_dangerous ? ' dangerous' : '')
           + (!tech.is_dangerous && tech.is_rare ? ' rare' : '');
-
-      let $extraDataDiv = function() {
-        let $descBtn = $('<p>');
-        $descBtn.addClass('description');
-        $descBtn.attr('title', tech.description);
-        $descBtn.attr('data-header', 'Description');
-        $descBtn.html('…');
-        let weightModifiers = tech.weight_modifiers.length > 0
-            ? tech.weight_modifiers.join('')
-            : null;
-        let featureUnlocks = tech.feature_unlocks.length > 0
-            ? tech.feature_unlocks.join(', ')
-            : null;
-
-        let $modifiersBtn = $('<p>');
-        $modifiersBtn.addClass('weight-modifiers');
-        if ( weightModifiers !== null ) {
-          $modifiersBtn.attr('title', weightModifiers);
-          $modifiersBtn.attr('data-header', 'Weight Modifiers');
-        }
-        else {
-          $modifiersBtn.addClass('disabled');
-        }
-        $modifiersBtn.html('⚄');
-
-        let $unlocksBtn = $('<p>');
-        $unlocksBtn.addClass('feature-unlocks');
-        if ( featureUnlocks !== null ) {
-          $unlocksBtn.attr('title', featureUnlocks);
-          $unlocksBtn.attr('data-header', 'Research Effects');
-        }
-        else {
-          $unlocksBtn.addClass('disabled');
-        }
-        $unlocksBtn.html('🎁');
-
-        let $extraDataDiv = $('<div class="extra-data">');
-        $extraDataDiv.append($descBtn);
-        $extraDataDiv.append($modifiersBtn);
-        $extraDataDiv.append($unlocksBtn);
-        return $extraDataDiv;
-      }();
-
+      
       return {
         HTMLid: key,
         HTMLclass: tech.area,
