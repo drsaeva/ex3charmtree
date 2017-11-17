@@ -38,23 +38,25 @@
   <script>
     var chart = new Treant(simple_chart_config, function() { alert( 'Tree Loaded' ) }, $ );
     var simple_chart_config = {
-      chart: {
+    chart: {
         container: "#tree-simple"
-      }, 
-      nodeStructure: {
-        text: { 
-          name: "Parent node" 
-        },
+    },
+    
+    nodeStructure: {
+        text: { name: "Parent node" },
         children: [
-          {
-            text: { name: "First child" }
-          },
-          {
-            text: { name: "Second child" }
-          }
+            {
+                text: { name: "First child" }
+            },
+            {
+                text: { name: "Second child" }
+            }
         ]
-      }
-    };
+    }
+};
+
+
+
   </script>
 </body>
 </html>
