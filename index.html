@@ -37,7 +37,6 @@
   <h1>Placeholder</h1>
   <div id="tree-simple" style="width:335px; height: 160px"> </div>
   <script>
-    var chart = new Treant(simple_chart_config, function() { alert( 'Tree Loaded' ) }, $ );
     var simple_chart_config = {
     chart: {
         container: "#tree-simple"
@@ -55,7 +54,7 @@
         ]
     }
 };
-
+  var chart = new Treant(simple_chart_config);
 
 
   </script>
