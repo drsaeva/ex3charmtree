@@ -13,7 +13,7 @@
   visibility: hidden;
   width: 480px;
   height: 245px; 
-  clip-path: polygon(0% 9.4%, 20% 9.4%, 15% 0%, 85% 0%, 80% 9.4%, 100% 9.4%, 100% 85%, 80% 85%, 85% 100%, 15% 100%, 20% 86%, 0% 85%);
+  clip-path: polygon(0% 9.375%, 20% 9.375%, 15% 0%, 85% 0%, 80% 9.375%, 100% 9.375%, 100% 85%, 80% 85%, 85% 100%, 15% 100%, 20% 86%, 0% 85%);
   background-image: url("https://drsaeva.github.io/ex3charmtree/cascade-box-empty.svg");
   background-position: center;
   background-repeat: no-repeat;
