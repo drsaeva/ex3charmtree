@@ -21,6 +21,11 @@
   background-size: contain;
 }
 
+.node > .p {
+  position: center;
+  text-align: center;
+}
+
 .Treant.Treant-loaded .node,
 .Treant.Treant-loaded .pseudo { 
   visibility: visible; 
