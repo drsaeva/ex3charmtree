@@ -43,17 +43,24 @@
     },
     
     nodeStructure: {
-        text: { name: "Parent node" },
-        children: [
-            {
-                text: { name: "First child" }
-            },
-            {
-                text: { name: "Second child" }
-            }
-        ]
-    }
-};
+      text: { 
+		    image: "cascade-box-full.svg",
+		    name: "Parent node" 
+      },
+      children: [
+        {
+          image: "cascade-box-full.svg",
+          text: { 
+            name: "First child" 
+          }
+        }, {
+          image: "cascade-box-full.svg",
+          text: { 
+            name: "Second child" 
+          }
+        }]
+      }
+    };
   var chart = new Treant(simple_chart_config);
 
 
