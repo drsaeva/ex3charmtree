@@ -11,7 +11,7 @@
   position: absolute; 
   display: block; 
   visibility: hidden;
-  background: url('cascade-box-empty.svg') no-repeat fixed center; 
+  background: url('cascade-box-empty.svg') no-repeat fixed center contain; 
 }
 
 .Treant.Treant-loaded .node,
