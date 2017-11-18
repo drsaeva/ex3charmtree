@@ -5,4 +5,4 @@ Responsive web app for visualizing Charm cascades in Exalted 3rd Edition. Starti
 Code by DankMuffins/drsaeva
 Designs by MadLetter
 Other Collaborators welcome!
-Reach out via (email)[drsaeva@gmail.com] or to DankMuffins#8886 on Discord
+Reach out via [email](drsaeva@gmail.com) or to DankMuffins#8886 on Discord
