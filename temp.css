@@ -21,7 +21,7 @@
   background-size: contain;
 }
 
-.node > .p {
+.Treant > .node > .p {
   position: center;
   text-align: center;
 }
