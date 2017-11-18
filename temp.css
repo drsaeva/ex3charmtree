@@ -13,14 +13,13 @@
   visibility: hidden;
   width: 480px;
   height: 245px; 
-  clip-path: polygon(0% 9.375%, 19.792% 9.375%, 15.625% 0%, 82.05% 0%, 77.468% 9.375%, 97.396% 9.375%, 97.396% 90.625%, 77.468% 90.625%, 82.0519% 100%, 15.625% 100%, 19.792% 90.625%, 0% 90.625%);
-  background-image: url("https://drsaeva.github.io/ex3charmtree/cascade-box-empty.svg");
+  background-image: url("https://drsaeva.github.io/ex3charmtree/cascade-box-full.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #FFF7E0;
 }
 
 .node-name {
+  height: 145px;
   position: center;
   text-align: center;
 }
