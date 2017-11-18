@@ -11,7 +11,8 @@
   position: absolute; 
   display: block; 
   visibility: hidden;
-  max-width: 100%;
+  width: 100%;
+  max-width: 480px;
   height: 0%;
   padding-top: 56.25%;
   /*border: 100px solid #000; 
